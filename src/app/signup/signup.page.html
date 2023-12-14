@@ -1,0 +1,95 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <!-- <ion-title>loginscreen</ion-title> -->
+    <ion-button slot="start">
+      <ion-back-button defaultthref="login" text="">
+
+      </ion-back-button>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <ion-card class="ion-no-margin">
+    <!-- <ion-img src="assets/images/curve.png">
+
+    </ion-img> -->
+    <ion-card-content>
+      <div class="wrapform">
+        <ion-item>
+          <!-- <ion-icon color="red" name="mail-outline"></ion-icon>         -->
+          <ion-input  type="text" name="name" [(ngModel)]="objectblock.patientName" placeholder="Patient Name"></ion-input>
+        </ion-item>
+        <!-- <ion-item >
+          <ion-label>Date of Birth</ion-label>
+          <ion-datetime minuteValues="0,15,30,45" dayValues="5,10,15,20,25,30"></ion-datetime>
+
+
+        </ion-item> -->
+        <ion-item>         
+          <!-- <ion-icon name="lock-closed-outline"></ion-icon> -->
+         
+          <ion-input type="" [(ngModel)]="objectblock.nationId"placeholder="National ID"></ion-input>
+        </ion-item>
+        <ion-item>
+          <!-- <ion-label>National ID</ion-label> -->
+          <ion-select placeholder="Gender" [(ngModel)]="objectblock.gender">
+            <!-- Add ion-select-options for each option -->
+            <ion-select-option value="male">Male</ion-select-option>
+            <ion-select-option value="Female">Female</ion-select-option>
+         
+            <!-- Add more options as needed -->
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <!-- <ion-label>National ID</ion-label> -->
+          <ion-select placeholder="County" [(ngModel)]="objectblock.county">
+            <!-- Add ion-select-options for each option -->
+            <ion-select-option value="Nairobi">Nairobi</ion-select-option>
+            <ion-select-option value="Kiambu">Kiambu</ion-select-option>
+         
+            <!-- Add more options as needed -->
+          </ion-select>
+        </ion-item>
+        <ion-item>         
+          <!-- <ion-icon name="lock-closed-outline"></ion-icon> -->
+         
+          <ion-input type="" name="Mobile"placeholder="Mobile No" [(ngModel)]="objectblock.mobileNo"></ion-input>
+        </ion-item>
+        <ion-item>         
+          <!-- <ion-icon name="lock-closed-outline"></ion-icon> -->
+         
+          <ion-input type="" name="email"placeholder="Email" [(ngModel)]="objectblock.email"></ion-input>
+        </ion-item>
+        <ion-item>         
+          <!-- <ion-icon name="lock-closed-outline"></ion-icon> -->
+         
+          <ion-input type="" name="Mobile"placeholder="Alternative Person No" [(ngModel)]="objectblock.alternativeNo"></ion-input>
+        </ion-item>
+        <ion-item>         
+          <!-- <ion-icon name="lock-closed-outline"></ion-icon> -->
+         
+          <ion-input type="" name="Mobile"placeholder="Telephone No" [(ngModel)]="objectblock.telephoneNo"></ion-input>
+        </ion-item>
+        <ion-item>
+          <!-- <ion-label>National ID</ion-label> -->
+          <ion-select placeholder="Disability Status" [(ngModel)]="objectblock.DisaStatus">
+            <!-- Add ion-select-options for each option -->
+            <ion-select-option value="Yes">Yes</ion-select-option>
+            <ion-select-option value="No">No</ion-select-option>
+         
+            <!-- Add more options as needed -->
+          </ion-select>
+        </ion-item>
+      </div>
+      <!-- <div class="forgotpassword">
+        <ion-button fill="clear" class="ion-text-lowercase">Forgot Passsword</ion-button>
+      </div> -->
+      <div class="sign-btn-wrap">
+        <ion-button shape="round" (click)="signup()"fill="solid" class="sign-btn"  >Sign Up</ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  
+</ion-content>

@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { v4 as uuidv4 } from 'uuid';
+import { MyGlobalServiceService } from './my-global-service.service';
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,14 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor() {}
+  
+  constructor(public globalVars: MyGlobalServiceService) {
+    this.globalVars.setGlobalVariable("8882");
+  }
+  
+  
+  
+  
+ 
+  
 }

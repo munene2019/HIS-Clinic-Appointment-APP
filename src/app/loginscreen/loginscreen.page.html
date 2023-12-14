@@ -1,0 +1,39 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <!-- <ion-title>loginscreen</ion-title> -->
+    <ion-button slot="start">
+      <ion-back-button defaultthref="login" text="">
+
+      </ion-back-button>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <ion-card class="ion-no-margin">
+    <ion-img src="assets/images/curve.png">
+
+    </ion-img>
+    <ion-card-content>
+      <div class="wrapform">
+        <ion-item>
+          <ion-icon color="red" name="mail-outline"></ion-icon>        
+          <ion-input class="ion-text-lowercase" type="text" name="email"placeholder="Email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="lock-closed-outline"></ion-icon>
+         
+          <ion-input type="passsword" name="password"placeholder="**********"></ion-input>
+        </ion-item>
+      </div>
+      <div class="forgotpassword">
+        <ion-button fill="clear" class="ion-text-lowercase">Forgot Passsword</ion-button>
+      </div>
+      <div class="sign-btn-wrap">
+        <ion-button shape="round" fill="solid" class="sign-btn">Login</ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  
+</ion-content>

@@ -2,6 +2,32 @@
 // http://ionicframework.com/docs/theming/
 
 /** Ionic CSS Variables **/
+$colors: (
+  primary:     blue,
+  secondary:  blue,
+  danger:     #f53d3d,
+  light:      #f4f4f4,
+  dark:       #222,
+  butttonwhite:white,
+  buttoncolor:blue,
+
+  myblack:    #000000,
+  mywhite:    #ffffff,
+  mytran:     rgba(0,0,0,0),
+
+  oddgreen:    blue,
+  coopoddgreen2:   blue,
+  inputgrey:  rgba(205,205,205,.7),
+  mypurp:     #c14279,
+  mybrown:    #543c00,
+  mymaroon:   #540018,
+  mygrey:     rgba(205,205,205,1),
+  myblue:     #79C142,
+  white:       #ffffff,
+  lightwhite:  #ebebeb,
+  blank: #79C142
+
+);
 :root {
   /** primary **/
   --ion-color-primary: #3880ff;

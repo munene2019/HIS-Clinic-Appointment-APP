@@ -1,0 +1,33 @@
+
+
+
+.container2 {
+    background:rgba(0,0,0,.2);
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: flex;
+    display: -ms-flexbox;
+    -webkit-flex-direction: column;
+    ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    height: 100%
+  }
+  .borderdet{
+    border-left:1px solid #174a8a; border-right:1px solid #174a8a; border-top:1px solid #174a8a; border-bottom:1px solid #174a8a
+  }
+  .fieldfontsize{
+    font-size: 20px;
+    background: rgba(0,0,0,0);
+    color:#000000;
+  }
+  .grad {
+    background:#174a8a; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(-180deg,#174a8a,#FFFFFF); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(-180deg,#174a8a,#FFFFFF); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(-180deg#174a8a,#FFFFFF); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(-180deg,#174a8a);
+    color:white;
+     /* Standard syntax */
+  }

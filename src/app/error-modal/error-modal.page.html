@@ -1,0 +1,44 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>Confirmation</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<!-- <ion-content class="ion-padding">
+  <p>{{ errorMessage }}</p>
+  <ion-button (click)="dismiss()">OK</ion-button>
+  <ion-button (click)="dismiss()">Cancel</ion-button>
+</ion-content> -->
+
+
+<ion-header>
+  <ion-toolbar class="grad" style="background-color: blue;">
+    <ion-row center style="font-size:10px;width:100%;">
+      <ion-col>
+        <div style="color:#000000">
+        </div>
+      </ion-col>
+      <ion-col style="" class="textcolor">
+        <div class="textcolor" style="color:#000000">
+          <ion-title class="textcolor" style="margin-left: -100px;"></ion-title>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content style=" background-color: blue;;margin-top: 500%;width:100%">
+  <p>{{ errorMessage }}</p>
+  <ion-row padding style="">
+    <ion-col col-6>
+        <button ion-button block mode="ios" color="coopoddgreen" (click)="dismiss()" style="width:100%; height: 45px;border-radius: 10px;">
+            OK
+        </button>
+    </ion-col>
+    <ion-col col-6>
+        <button ion-button block mode="ios" color="cooplightgreen" (click)="dismiss()" style="width:100%; height: 45px;border-radius: 10px;">
+            Cancel
+        </button>
+    </ion-col>
+  </ion-row>
+</ion-content>
