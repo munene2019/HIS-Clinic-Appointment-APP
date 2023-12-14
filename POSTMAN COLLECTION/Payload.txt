@@ -1,0 +1,16 @@
+{
+  "patieNname": "Rogers Munene",
+  "patient_No": "1234",
+  "dateOfBirth": "01-01-1991",
+  "nationalNo": "779988",
+  "gender": "male",
+  "countyCode": "7",
+  "mobileNo": "0712622099",
+  "email": "munenerogers@gmail.com",
+  "alternativePersonNo": "0712889988",
+  "telephone": "77372332",
+  "disabilityStatus": "No",
+  "appointmentDate": "2023"
+}
+
+ENDPOINT URL:http://localhost:80/ClinicApp/register.php
