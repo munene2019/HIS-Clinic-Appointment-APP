@@ -24,18 +24,6 @@ $appointmentDate = $data->appointmentDate;//
 
 
 
-
-
-
-
-
-
-
-
-
-// Hash the password (use password_hash() in a production environment)
-//$hashedPassword = md5($password);
-
 // Insert user into the database
 $query = "INSERT INTO `patient` (`p_name`, `p_no`, `date_of_birth`, `national_id`, `gender_code`, `countycode`, `mobile_no`, `email`, `contant_person_no`, `telephone_no`, `disability_status`, `appointment_date`)
  VALUES ('$patieNname', '$patient_No', '$dateOfBirth', '$nationalNo', '$gender', '$countyCode', '$mobileNo', '$email', '$alternativePersonNo', '$telephone', '$disabilityStatus', '$appointmentDate')";
@@ -46,14 +34,7 @@ if ($conn->query($query) === TRUE) {
 }
 
 
-$query = "INSERT INTO users (username, password) VALUES ('$username', '$password')";
 
-// if ($conn->query($query) === TRUE) {
-//     echo json_encode(array("message" => "Registration successful"));
-// } else {
-//     echo json_encode(array("message" => "Error: " . $query . "<br>" . $conn->error));
-// }
-// Close database connection
 $conn->close();
 function generatePatientNo($length = 10) {
     $min = pow(10, $length - 1);
