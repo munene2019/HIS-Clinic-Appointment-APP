@@ -9,7 +9,7 @@ import { Observable, map } from 'rxjs';
   providedIn: 'root',
 })
 export class AuthService {
-  private apiUrl = 'http://127.0.0.1:80/LoanApp/register.php';
+  private apiUrl = 'http://127.0.0.1:80/ClinicApp/register.php';
   body:any;
 
   constructor(private http: HttpClient) {}
